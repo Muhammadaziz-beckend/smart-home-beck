@@ -1,0 +1,25 @@
+# Python virtual environments
+env/
+venv/
+
+# Compiled python files
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+
+# Django migrations
+migrations/
+
+# Логи
+*.log
+
+# Базы данных
+*.sqlite3
+
+# Настройки среды разработки
+.vscode/
+.idea/
+.env
+
+static/static_root/*
