@@ -2,10 +2,12 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django_resized import ResizedImageField
 from django.utils.translation import gettext_lazy as _
+
+from utils.model import DataTimeCreate
 from .manager import UserNewManager
 
 
-class User(AbstractUser):
+class User(DataTimeCreate,AbstractUser):
 
     class Meta:
         verbose_name = "пользователь"
